@@ -1,0 +1,40 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_above="@id/image_bottom"
+        android:layout_alignBaseline="@id/image_bottom"
+        android:layout_marginBottom="-500dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <WebView
+            android:id="@+id/wv_top"
+            android:layout_width="fill_parent"
+            android:layout_height="430dp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@id/wv_top"
+            android:layout_marginBottom="-15dp"
+            android:layout_marginLeft="230dp"
+            android:text="X"
+            android:onClick="onCloseClick"
+            android:visibility="invisible"/>
+    </FrameLayout>
+</RelativeLayout>
+
