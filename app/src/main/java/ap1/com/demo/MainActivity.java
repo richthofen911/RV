@@ -2,7 +2,6 @@ package ap1.com.demo;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.AsyncTask;
@@ -18,7 +17,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.app.PendingIntent;
 import android.app.NotificationManager;
-import android.app.Notification;
 
 import com.firebase.client.Firebase;
 import com.perples.recosdk.RECOBeacon;
@@ -32,7 +30,6 @@ import com.perples.recosdk.RECOServiceConnectListener;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 
@@ -118,7 +115,7 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
     }
 
     public PendingIntent getDefaultIntent(){
-        PendingIntent pendingIntent= PendingIntent.getActivity(this, 1, new Intent(getApplicationContext(), MainActivity.class), PendingIntent.FLAG_CANCEL_CURRENT);
+        PendingIntent pendingIntent= PendingIntent.getActivity(this, 1, new Intent(getApplicationContext(), FireNotification.class), PendingIntent.FLAG_CANCEL_CURRENT);
         return pendingIntent;
     }
 
@@ -152,12 +149,51 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
     @Override
     public void didRangeBeaconsInRegion(Collection<RECOBeacon> recoBeacons, RECOBeaconRegion recoRegion) {
         if(!recoBeacons.isEmpty()){
+            synchronized (recoBeacons){
+                for(RECOBeacon recoBeacon: recoBeacons){
+                    beacons.put("" + recoBeacon.getProximityUuid() + recoBeacon.getMajor() + recoBeacon.getMinor(), recoBeacon.getProximity());
+                }
+                if(readyToRange){
+                    if(beacons.containsKey(aBeacon.getUmm()) && (beacons.get(aBeacon.getUmm()) == RECOProximity.RECOProximityImmediate || beacons.get(aBeacon.getUmm()) == RECOProximity.RECOProximityNear)){
+                        if(!DataStore.getInoutStatus()){
+                            DataStore.setInoutStatus(true);
+                            Log.e("load message with url: ", url_company);
+                            wv_top.setVisibility(View.VISIBLE);
+                            wv_top.loadUrl(url_company);
+                            btn_close.setVisibility(View.VISIBLE);
+                            inout.put(macAddress, "in");
+                            rootRef.child(beaconId).child(macAddress).setValue("in");
+                            simpleNotification();
+                            Log.e("put a check in ---", "");
+
+                        }else{
+                            Log.e("checked in already", "");
+                        }
+
+                    }else{
+                        if(DataStore.getInoutStatus()){
+                            DataStore.setInoutStatus(false);
+                            inout.put(macAddress, "out");
+                            rootRef.child(beaconId).child(macAddress).setValue("out");
+                            Log.e("put a check out --- ", "");
+                        }else{
+                            Log.e("checked out already", "");
+                        }
+                    }
+                }
+                else{
+                    rootRef.child(beaconId).child(macAddress).setValue("out");
+                    Log.e("no beacon found", "send an out");
+                }
+            }
+        }
+    /*
             for(RECOBeacon recoBeacon: recoBeacons){
                 beacons.put("" + recoBeacon.getProximityUuid() + recoBeacon.getMajor() + recoBeacon.getMinor(), recoBeacon.getProximity());
             }
             if(readyToRange){
                 if(beacons.containsKey(aBeacon.getUmm()) && (beacons.get(aBeacon.getUmm()) == RECOProximity.RECOProximityImmediate || beacons.get(aBeacon.getUmm()) == RECOProximity.RECOProximityNear)){
-                    if(!InoutStatus.getInoutStatus()){
+                    if(!DataStore.getInoutStatus()){
                         Log.e("load message with url: ", url_company);
                         wv_top.setVisibility(View.VISIBLE);
 
@@ -168,20 +204,20 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
                         rootRef.child(beaconId).child(macAddress).setValue("in");
                         simpleNotification();
                         Log.e("put a check in ---", "");
-                        InoutStatus.setInoutStatus(true);
+                        DataStore.setInoutStatus(true);
                     }else{
                         Log.e("checked in already", "");
                     }
 
                 }else{
-                    if(InoutStatus.getInoutStatus()){
+                    if(DataStore.getInoutStatus()){
                         Log.e("remove message","");
                         inout.put(macAddress, "out");
                         //wv_top.setVisibility(View.INVISIBLE);
                         //btn_close.setVisibility(View.INVISIBLE);
                         rootRef.child(beaconId).child(macAddress).setValue("out");
                         Log.e("put a check out --- ", "");
-                        InoutStatus.setInoutStatus(false);
+                        DataStore.setInoutStatus(false);
                     }else{
                         Log.e("checked out already", "");
                     }
@@ -192,6 +228,7 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
             rootRef.child(beaconId).child(macAddress).setValue("out");
             Log.e("no beacon found", "send an out");
         }
+    */
         //Write the code when the beacons in the region is received
     }
 
@@ -277,6 +314,7 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
                 httpClient.parseJSON(result);
                 aBeacon = httpClient.getBeacons().get(0);
                 url_company = url_company_prefix + aBeacon.getCompanyId() + "/" + aBeacon.getUuid() +"/"+ aBeacon.getMajor() + "/" + aBeacon.getMinor();
+                DataStore.setMessageUrl(url_company);
                 readyToRange = true;
             }
         }
