@@ -187,49 +187,6 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
                 }
             }
         }
-    /*
-            for(RECOBeacon recoBeacon: recoBeacons){
-                beacons.put("" + recoBeacon.getProximityUuid() + recoBeacon.getMajor() + recoBeacon.getMinor(), recoBeacon.getProximity());
-            }
-            if(readyToRange){
-                if(beacons.containsKey(aBeacon.getUmm()) && (beacons.get(aBeacon.getUmm()) == RECOProximity.RECOProximityImmediate || beacons.get(aBeacon.getUmm()) == RECOProximity.RECOProximityNear)){
-                    if(!DataStore.getInoutStatus()){
-                        Log.e("load message with url: ", url_company);
-                        wv_top.setVisibility(View.VISIBLE);
-
-                        wv_top.loadUrl(url_company);
-                        btn_close.setVisibility(View.VISIBLE);
-                        //oneBeacon.put("beacon1", aBeacon.getUmm());
-                        inout.put(macAddress, "in");
-                        rootRef.child(beaconId).child(macAddress).setValue("in");
-                        simpleNotification();
-                        Log.e("put a check in ---", "");
-                        DataStore.setInoutStatus(true);
-                    }else{
-                        Log.e("checked in already", "");
-                    }
-
-                }else{
-                    if(DataStore.getInoutStatus()){
-                        Log.e("remove message","");
-                        inout.put(macAddress, "out");
-                        //wv_top.setVisibility(View.INVISIBLE);
-                        //btn_close.setVisibility(View.INVISIBLE);
-                        rootRef.child(beaconId).child(macAddress).setValue("out");
-                        Log.e("put a check out --- ", "");
-                        DataStore.setInoutStatus(false);
-                    }else{
-                        Log.e("checked out already", "");
-                    }
-                }
-            }
-
-        }else{
-            rootRef.child(beaconId).child(macAddress).setValue("out");
-            Log.e("no beacon found", "send an out");
-        }
-    */
-        //Write the code when the beacons in the region is received
     }
 
     protected void start(ArrayList<RECOBeaconRegion> regions) {
