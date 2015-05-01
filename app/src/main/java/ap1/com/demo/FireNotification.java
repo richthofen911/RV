@@ -26,7 +26,7 @@ public class FireNotification extends ActionBarActivity {
         wv_top2 = (WebView) findViewById(R.id.wv_top2);
         btn_close2 = (Button) findViewById(R.id.btn_close2);
 
-        image_bottom2.setImageResource(R.drawable.bluetooth);
+        image_bottom2.setImageResource(R.drawable.ap1_logo);
         wv_top2.setWebViewClient(new WebViewClient() {
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 view.loadUrl(url);

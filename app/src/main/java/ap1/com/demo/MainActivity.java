@@ -1,5 +1,6 @@
 package ap1.com.demo;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.wifi.WifiInfo;
@@ -38,7 +39,7 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
     String url_beaconList = "http://sto.apengage.io/index.php/beacons/global";
     String url_company_prefix = "http://sto.apengage.io/index.php/api/v2/beacons/";
     String url_company = "";
-    String beaconId = "5537fafde11d53af1915057f";
+    String beaconId;
     String TOBEFOUND_UUID = "E2C56DB5-DFFB-48D2-B060-D0F5A71096E0";
 
     ImageView image_bottom;
@@ -64,6 +65,7 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
     private String proximity;
 
     private boolean readyToRange = false;
+    private boolean isAppActive = false;
 
     private Beacon aBeacon;
 
@@ -90,7 +92,7 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
         wv_top = (WebView) findViewById(R.id.wv_top);
         btn_close = (Button) findViewById(R.id.btn_close);
 
-        image_bottom.setImageResource(R.drawable.bluetooth);
+        image_bottom.setImageResource(R.drawable.ap1_logo);
         wv_top.setWebViewClient(new WebViewClient(){
             public boolean shouldOverrideUrlLoading(WebView view, String url){
                 view.loadUrl(url);
@@ -124,7 +126,7 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
         notifyBuilder = new NotificationCompat.Builder(this)
                 .setContentIntent(getDefaultIntent())
                 .setContentTitle("New Messages")
-                .setContentText("You Receive a New Message")
+                .setContentText("You Received a New Message")
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setAutoCancel(true);
         notificationManager.notify(100, notifyBuilder.build());
@@ -136,6 +138,18 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
         //rootRef.child(beaconId).child(macAddress).removeValue();
         //this.stop(mRegions);
         //this.unbind();
+    }
+
+    @Override
+    public void onStart(){
+        super.onStart();
+        isAppActive = true;
+    }
+
+    @Override
+    public void onStop(){
+        super.onStop();
+        isAppActive = false;
     }
 
     @Override
@@ -162,8 +176,14 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
                             wv_top.loadUrl(url_company);
                             btn_close.setVisibility(View.VISIBLE);
                             inout.put(macAddress, "in");
-                            rootRef.child(beaconId).child(macAddress).setValue("in");
-                            simpleNotification();
+                            if(beaconId != null){
+                                rootRef.child(beaconId).child(macAddress).setValue("in");
+                            }
+
+                            if(!isAppActive){
+                                simpleNotification();
+                            }
+
                             Log.e("put a check in ---", "");
 
                         }else{
@@ -269,12 +289,13 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
         protected void onPostExecute(String result){
             if(!result.equals("[]")){
                 httpClient.parseJSON(result);
+                Log.e("beacon in httpclient ", httpClient.getBeacons().toString());
                 aBeacon = httpClient.getBeacons().get(0);
+                beaconId = aBeacon.getBeaconId();
                 url_company = url_company_prefix + aBeacon.getCompanyId() + "/" + aBeacon.getUuid() +"/"+ aBeacon.getMajor() + "/" + aBeacon.getMinor();
                 DataStore.setMessageUrl(url_company);
                 readyToRange = true;
             }
         }
     }
-
 }

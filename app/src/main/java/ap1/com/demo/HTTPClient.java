@@ -32,7 +32,6 @@ public class HTTPClient {
     private static String url_getReferral = "http://54.149.146.72/index.php";
 
     private String json;
-
     private int result;
     private String uuid;
     private String major;
@@ -41,6 +40,8 @@ public class HTTPClient {
     private String message;
     private String companyID;
     ArrayList<Beacon> beacons = new ArrayList<>();
+
+    public static String beaconId = "";
 
 
     public String getJson() { return json; }
@@ -75,7 +76,7 @@ public class HTTPClient {
             JSONObject aBeacon;
             for(int i = 0; i < jsonArray.length(); i++){
                 aBeacon = jsonArray.getJSONObject(i);
-                beacons.add(new Beacon(aBeacon.getString("proximity_uuid"), aBeacon.getString("major"), aBeacon.getString("minor"), aBeacon.getString("companyID")));
+                beacons.add(new Beacon(aBeacon.getString("_id"), aBeacon.getString("uuid"), aBeacon.getString("major"), aBeacon.getString("minor"), aBeacon.getString("companyID")));
             }
             /*
             uuid = result.getString("uuid");

@@ -9,13 +9,19 @@ public class Beacon {
     private String minor;
     private String companyId;
     private String umm;
+    private String beaconId;
 
-    public Beacon(String uuid, String major, String minor, String companyId){
+    public Beacon(String beaconId, String uuid, String major, String minor, String companyId){
+        this.beaconId = beaconId;
         this.uuid = uuid;
         this.major = major;
         this.minor = minor;
         this.companyId = companyId;
         this.umm = uuid + major + minor;
+    }
+
+    public String getBeaconId(){
+        return beaconId;
     }
 
     public String getUuid(){
