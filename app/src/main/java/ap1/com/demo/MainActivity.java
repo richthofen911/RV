@@ -58,7 +58,7 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
 
     private HashMap<String, RECOProximity> beacons = new HashMap<>();
     private Map<String, String> inout = new HashMap<>();
-    private Map<String, String> oneBeacon = new HashMap<>();
+    private ArrayList<Beacon> beaconsFromUrl = new ArrayList<>();
 
     Firebase rootRef;
 
@@ -168,6 +168,62 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
                     beacons.put("" + recoBeacon.getProximityUuid() + recoBeacon.getMajor() + recoBeacon.getMinor(), recoBeacon.getProximity());
                 }
                 if(readyToRange){
+                    for(Beacon oneBeacon: beaconsFromUrl){
+                        if(beacons.containsKey(oneBeacon.getUmm()) && (beacons.get(oneBeacon.getUmm()) == RECOProximity.RECOProximityImmediate || beacons.get(oneBeacon.getUmm()) == RECOProximity.RECOProximityNear)){
+                            if(!DataStore.getInoutStatus()){
+                                DataStore.setInoutStatus(true);
+                                Log.e("load message with url: ", url_company);
+                                wv_top.setVisibility(View.VISIBLE);
+                                wv_top.loadUrl(url_company);
+                                btn_close.setVisibility(View.VISIBLE);
+                                inout.put(macAddress, "in");
+                                if(beaconId != null){
+                                    rootRef.child(beaconId).child(macAddress).setValue("in");
+                                }
+
+                                if(!isAppActive){
+                                    simpleNotification();
+                                }
+
+                                Log.e("put a check in ---", "");
+
+                            }else{
+                                Log.e("checked in already", "");
+                            }
+
+                        }
+                    }
+                    else{
+                        if(DataStore.getInoutStatus()){
+                            DataStore.setInoutStatus(false);
+                            inout.put(macAddress, "out");
+                            rootRef.child(beaconId).child(macAddress).setValue("out");
+                            Log.e("put a check out --- ", "");
+                        }else{
+                            Log.e("checked out already", "");
+                        }
+                    }
+                }
+                else{
+                    rootRef.child(beaconId).child(macAddress).setValue("out");
+                    Log.e("no beacon found", "send an out");
+                }
+            }
+        }
+    }
+
+/*
+    @Override
+    public void didRangeBeaconsInRegion(Collection<RECOBeacon> recoBeacons, RECOBeaconRegion recoRegion) {
+        if(!recoBeacons.isEmpty()){
+            synchronized (recoBeacons){
+                for(RECOBeacon recoBeacon: recoBeacons){
+                    beacons.put("" + recoBeacon.getProximityUuid() + recoBeacon.getMajor() + recoBeacon.getMinor(), recoBeacon.getProximity());
+                }
+                if(readyToRange){
+                    for(Beacon oneBeacon: beaconsFromUrl){
+
+                    }
                     if(beacons.containsKey(aBeacon.getUmm()) && (beacons.get(aBeacon.getUmm()) == RECOProximity.RECOProximityImmediate || beacons.get(aBeacon.getUmm()) == RECOProximity.RECOProximityNear)){
                         if(!DataStore.getInoutStatus()){
                             DataStore.setInoutStatus(true);
@@ -208,6 +264,7 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
             }
         }
     }
+*/
 
     protected void start(ArrayList<RECOBeaconRegion> regions) {
         for(RECOBeaconRegion region : regions) {
@@ -290,7 +347,8 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
             if(!result.equals("[]")){
                 httpClient.parseJSON(result);
                 Log.e("beacon in httpclient ", httpClient.getBeacons().toString());
-                aBeacon = httpClient.getBeacons().get(0);
+                beaconsFromUrl.addAll(httpClient.getBeacons());
+                //aBeacon = httpClient.getBeacons().get(0);
                 beaconId = aBeacon.getBeaconId();
                 url_company = url_company_prefix + aBeacon.getCompanyId() + "/" + aBeacon.getUuid() +"/"+ aBeacon.getMajor() + "/" + aBeacon.getMinor();
                 DataStore.setMessageUrl(url_company);
