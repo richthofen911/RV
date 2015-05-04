@@ -1,23 +1,22 @@
 package ap1.com.demo;
 
-import android.app.Activity;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.os.RemoteException;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.app.PendingIntent;
-import android.app.NotificationManager;
 
 import com.firebase.client.Firebase;
 import com.perples.recosdk.RECOBeacon;
@@ -180,7 +179,6 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
                                 if(beaconId != null){
                                     rootRef.child(beaconId).child(macAddress).setValue("in");
                                 }
-
                                 if(!isAppActive){
                                     simpleNotification();
                                 }
@@ -190,25 +188,22 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
                             }else{
                                 Log.e("checked in already", "");
                             }
-
-                        }
-                    }
-                    else{
-                        if(DataStore.getInoutStatus()){
-                            DataStore.setInoutStatus(false);
-                            inout.put(macAddress, "out");
-                            rootRef.child(beaconId).child(macAddress).setValue("out");
-                            Log.e("put a check out --- ", "");
                         }else{
-                            Log.e("checked out already", "");
+                            if(DataStore.getInoutStatus()){
+                                DataStore.setInoutStatus(false);
+                                inout.put(macAddress, "out");
+                                rootRef.child(beaconId).child(macAddress).setValue("out");
+                                Log.e("put a check out --- ", "");
+                            }else{
+                                Log.e("checked out already", "");
+                            }
                         }
                     }
-                }
-                else{
-                    rootRef.child(beaconId).child(macAddress).setValue("out");
-                    Log.e("no beacon found", "send an out");
                 }
             }
+        }else{
+            rootRef.child(beaconId).child(macAddress).setValue("out");
+            Log.e("no beacons found by BT", "send an out");
         }
     }
 
