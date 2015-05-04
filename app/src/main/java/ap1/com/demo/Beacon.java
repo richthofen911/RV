@@ -10,6 +10,7 @@ public class Beacon {
     private String companyId;
     private String umm;
     private String beaconId;
+    private boolean inoutStatus;
 
     public Beacon(String beaconId, String uuid, String major, String minor, String companyId){
         this.beaconId = beaconId;
@@ -18,6 +19,14 @@ public class Beacon {
         this.minor = minor;
         this.companyId = companyId;
         this.umm = uuid + major + minor;
+    }
+
+    public void setInoutStatus(boolean status){
+        inoutStatus = status;
+    }
+
+    public boolean getInoutStatus(){
+        return inoutStatus;
     }
 
     public String getBeaconId(){

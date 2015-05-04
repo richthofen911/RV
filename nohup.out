@@ -1,0 +1,618 @@
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=350m; support was removed in 8.0
+[   4397]   WARN - openapi.wm.impl.ToolWindowImpl - ToolWindow icons should be 13x13. Please fix jar:file:/home/admin/Programming/android-studio/lib/resources.jar!/artwork/toolWindowProject_AS.png 
+10:08:26.587 [ApplicationImpl pooled thread 9] DEBUG org.gradle.tooling.GradleConnector - Connecting from tooling API consumer version 2.2
+10:08:26.633 [Connection worker] DEBUG o.g.t.i.c.l.DefaultToolingImplementationLoader - Using tooling provider from Gradle distribution 'https://services.gradle.org/distributions/gradle-2.2.1-all.zip'
+10:08:26.634 [Connection worker] DEBUG o.g.t.i.c.l.DefaultToolingImplementationLoader - Using tooling provider classpath: [/home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/native-platform-linux-i386-0.10.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-model-groovy-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/javax.inject-1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/commons-io-1.4.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/jcip-annotations-1.0.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/jna-3.2.7.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-base-services-groovy-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/native-platform-freebsd-i386-0.10.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-launcher-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-core-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/guava-jdk5-17.0.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/native-platform-0.10.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/jcl-over-slf4j-1.7.7.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/minlog-1.2.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-ui-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-open-api-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/jul-to-slf4j-1.7.7.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/objenesis-1.2.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/native-platform-osx-amd64-0.10.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-base-services-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-messaging-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/log4j-over-slf4j-1.7.7.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-model-core-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/reflectasm-1.07-shaded.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-resources-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/native-platform-windows-amd64-0.10.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/native-platform-windows-i386-0.10.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/jarjar-1.3.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-tooling-api-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-docs-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/commons-collections-3.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/dom4j-1.6.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/asm-all-5.0.3.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/groovy-all-2.3.6.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/native-platform-osx-i386-0.10.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/native-platform-freebsd-amd64-0.10.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/jansi-1.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/slf4j-api-1.7.7.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/ant-1.9.3.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/ant-launcher-1.9.3.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/logback-classic-1.0.13.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/commons-lang-2.6.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-cli-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-wrapper-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/kryo-2.20.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-native-2.2.1.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/logback-core-1.0.13.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/native-platform-linux-amd64-0.10.jar, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/jaxen-1.1.jar]
+10:08:26.714 [Connection worker] DEBUG o.g.t.i.provider.DefaultConnection - Tooling API provider 2.2.1 created.
+10:08:26.885 [Connection worker] DEBUG o.g.t.i.provider.ProviderConnection - Configuring logging to level: INFO
+Tooling API is using target Gradle version: 2.2.1.
+Starting Gradle daemon
+Starting process 'command '/usr/java/default/bin/java''. Working directory: /home/admin/Programming/androidPro/SalesDemo Command: /usr/java/default/bin/java -version
+Successfully started process 'command '/usr/java/default/bin/java''
+Starting daemon process: workingDir = /home/admin/.gradle/daemon/2.2.1, daemonArgs: [/usr/java/default/bin/java, -XX:MaxPermSize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Xmx1024m, -Dfile.encoding=UTF-8, -Duser.country=CA, -Duser.language=en, -Duser.variant, -cp, /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-launcher-2.2.1.jar, org.gradle.launcher.daemon.bootstrap.GradleDaemon, 2.2.1, /home/admin/.gradle/daemon, 10800000, 15165d84-b631-496e-8e53-06a2caab24cd, -XX:MaxPermSize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Xmx1024m, -Dfile.encoding=UTF-8, -Duser.country=CA, -Duser.language=en, -Duser.variant]
+Starting process 'Gradle build daemon'. Working directory: /home/admin/.gradle/daemon/2.2.1 Command: /usr/java/default/bin/java -XX:MaxPermSize=256m -XX:+HeapDumpOnOutOfMemoryError -Xmx1024m -Dfile.encoding=UTF-8 -Duser.country=CA -Duser.language=en -Duser.variant -cp /home/admin/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/lib/gradle-launcher-2.2.1.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 2.2.1 /home/admin/.gradle/daemon 10800000 15165d84-b631-496e-8e53-06a2caab24cd -XX:MaxPermSize=256m -XX:+HeapDumpOnOutOfMemoryError -Xmx1024m -Dfile.encoding=UTF-8 -Duser.country=CA -Duser.language=en -Duser.variant
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 0.387 secs.
+Connected to daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=false, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=dffd7334-1821-4070-bf6d-8a55144b3568.1, currentDir=/home/admin/Programming/androidPro/SalesDemo}.
+Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJavaNote: /home/admin/Programming/androidPro/SalesDemo/app/src/main/java/ap1/com/demo/HTTPClient.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+
+BUILD SUCCESSFUL
+
+Total time: 6.396 secs
+Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@28acfe6c] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=false, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.
+10:09:22.148 [ApplicationImpl pooled thread 9] DEBUG org.gradle.tooling.GradleConnector - Connecting from tooling API consumer version 2.2
+Tooling API is using target Gradle version: 2.2.1.
+Connected to daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=6f1f5373-4270-46a1-9940-d3029779f5d7.1, currentDir=/home/admin/Programming/androidPro/SalesDemo}.
+Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug UP-TO-DATE
+:app:zipalignDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 1.252 secs
+Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@3ccef229] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.
+10:10:15.513 [ApplicationImpl pooled thread 6] DEBUG org.gradle.tooling.GradleConnector - Connecting from tooling API consumer version 2.2
+Tooling API is using target Gradle version: 2.2.1.
+Connected to daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=4e9d19f1-7f85-4cfe-a9fa-a543e0cab2d9.1, currentDir=/home/admin/Programming/androidPro/SalesDemo}.
+Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug UP-TO-DATE
+:app:zipalignDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 0.961 secs
+Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@6428a725] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.
+10:10:40.496 [ApplicationImpl pooled thread 3] DEBUG org.gradle.tooling.GradleConnector - Connecting from tooling API consumer version 2.2
+Tooling API is using target Gradle version: 2.2.1.
+Connected to daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=dfe1f6ac-4a42-42b4-a940-d84ca525376a.1, currentDir=/home/admin/Programming/androidPro/SalesDemo}.
+Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug UP-TO-DATE
+:app:zipalignDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 1.085 secs
+Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@2091b093] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.
+10:20:15.141 [ApplicationImpl pooled thread 13] DEBUG org.gradle.tooling.GradleConnector - Connecting from tooling API consumer version 2.2
+Tooling API is using target Gradle version: 2.2.1.
+Connected to daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=01056e6c-ce3e-408f-b6c5-6d7b0bbc0da6.1, currentDir=/home/admin/Programming/androidPro/SalesDemo}.
+Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJavaNote: /home/admin/Programming/androidPro/SalesDemo/app/src/main/java/ap1/com/demo/HTTPClient.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+
+BUILD SUCCESSFUL
+
+Total time: 2.546 secs
+Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@5d7a081a] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.
+10:22:34.912 [ApplicationImpl pooled thread 12] DEBUG org.gradle.tooling.GradleConnector - Connecting from tooling API consumer version 2.2
+Tooling API is using target Gradle version: 2.2.1.
+Connected to daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=125f4c88-3886-42c0-83e8-750fe3a5d4eb.1, currentDir=/home/admin/Programming/androidPro/SalesDemo}.
+Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug UP-TO-DATE
+:app:zipalignDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 1.023 secs
+Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@bc2e682] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.
+10:32:36.302 [ApplicationImpl pooled thread 14] DEBUG org.gradle.tooling.GradleConnector - Connecting from tooling API consumer version 2.2
+Tooling API is using target Gradle version: 2.2.1.
+Connected to daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=504b9a03-4544-430d-a817-19a67add96fe.1, currentDir=/home/admin/Programming/androidPro/SalesDemo}.
+Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJavaNote: /home/admin/Programming/androidPro/SalesDemo/app/src/main/java/ap1/com/demo/HTTPClient.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+
+BUILD SUCCESSFUL
+
+Total time: 2.395 secs
+Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@e643b2e] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.
+10:36:46.288 [ApplicationImpl pooled thread 14] DEBUG org.gradle.tooling.GradleConnector - Connecting from tooling API consumer version 2.2
+Tooling API is using target Gradle version: 2.2.1.
+Connected to daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=ed971415-9a65-4bc4-8b25-cd0aadcf8e65.1, currentDir=/home/admin/Programming/androidPro/SalesDemo}.
+Configuration on demand is an incubating feature.
+:app:clean
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library
+:app:prepareComAndroidSupportSupportV42200Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT warning(Job{title=Cruncher abc_spinner_mtrl_am_alpha.9.png, latch=BooleanLatch{signaled=false}, result=false}): /home/admin/Programming/androidPro/SalesDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaNote: /home/admin/Programming/androidPro/SalesDemo/app/src/main/java/ap1/com/demo/HTTPClient.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+
+BUILD SUCCESSFUL
+
+Total time: 1.759 secs
+Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@38c118a1] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.
+10:36:53.866 [ApplicationImpl pooled thread 14] DEBUG org.gradle.tooling.GradleConnector - Connecting from tooling API consumer version 2.2
+Tooling API is using target Gradle version: 2.2.1.
+Connected to daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=08134d8a-f8b0-4fd0-b739-db4657f23fe5.1, currentDir=/home/admin/Programming/androidPro/SalesDemo}.
+Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:preDexDebugAGPBI: {"kind":"SIMPLE","text":"warning: Ignoring InnerClasses attribute for an anonymous inner class","position":{},"original":"warning: Ignoring InnerClasses attribute for an anonymous inner class"}
+AGPBI: {"kind":"SIMPLE","text":"(org.shaded.apache.commons.logging.impl.LogFactoryImpl$1) that doesn\u0027t come with an","position":{},"original":"(org.shaded.apache.commons.logging.impl.LogFactoryImpl$1) that doesn\u0027t come with an"}
+AGPBI: {"kind":"SIMPLE","text":"associated EnclosingMethod attribute. This class was probably produced by a","position":{},"original":"associated EnclosingMethod attribute. This class was probably produced by a"}
+AGPBI: {"kind":"SIMPLE","text":"compiler that did not target the modern .class file format. The recommended","position":{},"original":"compiler that did not target the modern .class file format. The recommended"}
+AGPBI: {"kind":"SIMPLE","text":"solution is to recompile the class from source, using an up-to-date compiler","position":{},"original":"solution is to recompile the class from source, using an up-to-date compiler"}
+AGPBI: {"kind":"SIMPLE","text":"and without specifying any \"-target\" type options. The consequence of ignoring","position":{},"original":"and without specifying any \"-target\" type options. The consequence of ignoring"}
+AGPBI: {"kind":"SIMPLE","text":"this warning is that reflective operations on this class will incorrectly","position":{},"original":"this warning is that reflective operations on this class will incorrectly"}
+AGPBI: {"kind":"SIMPLE","text":"indicate that it is *not* an inner class.","position":{},"original":"indicate that it is *not* an inner class."}
+AGPBI: {"kind":"SIMPLE","text":"warning: Ignoring InnerClasses attribute for an anonymous inner class","position":{},"original":"warning: Ignoring InnerClasses attribute for an anonymous inner class"}
+AGPBI: {"kind":"SIMPLE","text":"(org.shaded.apache.commons.logging.impl.LogFactoryImpl$2) that doesn\u0027t come with an","position":{},"original":"(org.shaded.apache.commons.logging.impl.LogFactoryImpl$2) that doesn\u0027t come with an"}
+AGPBI: {"kind":"SIMPLE","text":"associated EnclosingMethod attribute. This class was probably produced by a","position":{},"original":"associated EnclosingMethod attribute. This class was probably produced by a"}
+AGPBI: {"kind":"SIMPLE","text":"compiler that did not target the modern .class file format. The recommended","position":{},"original":"compiler that did not target the modern .class file format. The recommended"}
+AGPBI: {"kind":"SIMPLE","text":"solution is to recompile the class from source, using an up-to-date compiler","position":{},"original":"solution is to recompile the class from source, using an up-to-date compiler"}
+AGPBI: {"kind":"SIMPLE","text":"and without specifying any \"-target\" type options. The consequence of ignoring","position":{},"original":"and without specifying any \"-target\" type options. The consequence of ignoring"}
+AGPBI: {"kind":"SIMPLE","text":"this warning is that reflective operations on this class will incorrectly","position":{},"original":"this warning is that reflective operations on this class will incorrectly"}
+AGPBI: {"kind":"SIMPLE","text":"indicate that it is *not* an inner class.","position":{},"original":"indicate that it is *not* an inner class."}
+AGPBI: {"kind":"SIMPLE","text":"warning: Ignoring InnerClasses attribute for an anonymous inner class","position":{},"original":"warning: Ignoring InnerClasses attribute for an anonymous inner class"}
+AGPBI: {"kind":"SIMPLE","text":"(org.shaded.apache.commons.logging.impl.LogFactoryImpl$3) that doesn\u0027t come with an","position":{},"original":"(org.shaded.apache.commons.logging.impl.LogFactoryImpl$3) that doesn\u0027t come with an"}
+AGPBI: {"kind":"SIMPLE","text":"associated EnclosingMethod attribute. This class was probably produced by a","position":{},"original":"associated EnclosingMethod attribute. This class was probably produced by a"}
+AGPBI: {"kind":"SIMPLE","text":"compiler that did not target the modern .class file format. The recommended","position":{},"original":"compiler that did not target the modern .class file format. The recommended"}
+AGPBI: {"kind":"SIMPLE","text":"solution is to recompile the class from source, using an up-to-date compiler","position":{},"original":"solution is to recompile the class from source, using an up-to-date compiler"}
+AGPBI: {"kind":"SIMPLE","text":"and without specifying any \"-target\" type options. The consequence of ignoring","position":{},"original":"and without specifying any \"-target\" type options. The consequence of ignoring"}
+AGPBI: {"kind":"SIMPLE","text":"this warning is that reflective operations on this class will incorrectly","position":{},"original":"this warning is that reflective operations on this class will incorrectly"}
+AGPBI: {"kind":"SIMPLE","text":"indicate that it is *not* an inner class.","position":{},"original":"indicate that it is *not* an inner class."}
+AGPBI: {"kind":"SIMPLE","text":"warning: Ignoring InnerClasses attribute for an anonymous inner class","position":{},"original":"warning: Ignoring InnerClasses attribute for an anonymous inner class"}
+AGPBI: {"kind":"SIMPLE","text":"(org.shaded.apache.commons.logging.impl.SimpleLog$1) that doesn\u0027t come with an","position":{},"original":"(org.shaded.apache.commons.logging.impl.SimpleLog$1) that doesn\u0027t come with an"}
+AGPBI: {"kind":"SIMPLE","text":"associated EnclosingMethod attribute. This class was probably produced by a","position":{},"original":"associated EnclosingMethod attribute. This class was probably produced by a"}
+AGPBI: {"kind":"SIMPLE","text":"compiler that did not target the modern .class file format. The recommended","position":{},"original":"compiler that did not target the modern .class file format. The recommended"}
+AGPBI: {"kind":"SIMPLE","text":"solution is to recompile the class from source, using an up-to-date compiler","position":{},"original":"solution is to recompile the class from source, using an up-to-date compiler"}
+AGPBI: {"kind":"SIMPLE","text":"and without specifying any \"-target\" type options. The consequence of ignoring","position":{},"original":"and without specifying any \"-target\" type options. The consequence of ignoring"}
+AGPBI: {"kind":"SIMPLE","text":"this warning is that reflective operations on this class will incorrectly","position":{},"original":"this warning is that reflective operations on this class will incorrectly"}
+AGPBI: {"kind":"SIMPLE","text":"indicate that it is *not* an inner class.","position":{},"original":"indicate that it is *not* an inner class."}
+AGPBI: {"kind":"SIMPLE","text":"warning: Ignoring InnerClasses attribute for an anonymous inner class","position":{},"original":"warning: Ignoring InnerClasses attribute for an anonymous inner class"}
+AGPBI: {"kind":"SIMPLE","text":"(org.shaded.apache.commons.logging.impl.WeakHashtable$1) that doesn\u0027t come with an","position":{},"original":"(org.shaded.apache.commons.logging.impl.WeakHashtable$1) that doesn\u0027t come with an"}
+AGPBI: {"kind":"SIMPLE","text":"associated EnclosingMethod attribute. This class was probably produced by a","position":{},"original":"associated EnclosingMethod attribute. This class was probably produced by a"}
+AGPBI: {"kind":"SIMPLE","text":"compiler that did not target the modern .class file format. The recommended","position":{},"original":"compiler that did not target the modern .class file format. The recommended"}
+AGPBI: {"kind":"SIMPLE","text":"solution is to recompile the class from source, using an up-to-date compiler","position":{},"original":"solution is to recompile the class from source, using an up-to-date compiler"}
+AGPBI: {"kind":"SIMPLE","text":"and without specifying any \"-target\" type options. The consequence of ignoring","position":{},"original":"and without specifying any \"-target\" type options. The consequence of ignoring"}
+AGPBI: {"kind":"SIMPLE","text":"this warning is that reflective operations on this class will incorrectly","position":{},"original":"this warning is that reflective operations on this class will incorrectly"}
+AGPBI: {"kind":"SIMPLE","text":"indicate that it is *not* an inner class.","position":{},"original":"indicate that it is *not* an inner class."}
+AGPBI: {"kind":"SIMPLE","text":"warning: Ignoring InnerClasses attribute for an anonymous inner class","position":{},"original":"warning: Ignoring InnerClasses attribute for an anonymous inner class"}
+AGPBI: {"kind":"SIMPLE","text":"(org.shaded.apache.commons.logging.LogFactory$1) that doesn\u0027t come with an","position":{},"original":"(org.shaded.apache.commons.logging.LogFactory$1) that doesn\u0027t come with an"}
+AGPBI: {"kind":"SIMPLE","text":"associated EnclosingMethod attribute. This class was probably produced by a","position":{},"original":"associated EnclosingMethod attribute. This class was probably produced by a"}
+AGPBI: {"kind":"SIMPLE","text":"compiler that did not target the modern .class file format. The recommended","position":{},"original":"compiler that did not target the modern .class file format. The recommended"}
+AGPBI: {"kind":"SIMPLE","text":"solution is to recompile the class from source, using an up-to-date compiler","position":{},"original":"solution is to recompile the class from source, using an up-to-date compiler"}
+AGPBI: {"kind":"SIMPLE","text":"and without specifying any \"-target\" type options. The consequence of ignoring","position":{},"original":"and without specifying any \"-target\" type options. The consequence of ignoring"}
+AGPBI: {"kind":"SIMPLE","text":"this warning is that reflective operations on this class will incorrectly","position":{},"original":"this warning is that reflective operations on this class will incorrectly"}
+AGPBI: {"kind":"SIMPLE","text":"indicate that it is *not* an inner class.","position":{},"original":"indicate that it is *not* an inner class."}
+AGPBI: {"kind":"SIMPLE","text":"warning: Ignoring InnerClasses attribute for an anonymous inner class","position":{},"original":"warning: Ignoring InnerClasses attribute for an anonymous inner class"}
+AGPBI: {"kind":"SIMPLE","text":"(org.shaded.apache.commons.logging.LogFactory$2) that doesn\u0027t come with an","position":{},"original":"(org.shaded.apache.commons.logging.LogFactory$2) that doesn\u0027t come with an"}
+AGPBI: {"kind":"SIMPLE","text":"associated EnclosingMethod attribute. This class was probably produced by a","position":{},"original":"associated EnclosingMethod attribute. This class was probably produced by a"}
+AGPBI: {"kind":"SIMPLE","text":"compiler that did not target the modern .class file format. The recommended","position":{},"original":"compiler that did not target the modern .class file format. The recommended"}
+AGPBI: {"kind":"SIMPLE","text":"solution is to recompile the class from source, using an up-to-date compiler","position":{},"original":"solution is to recompile the class from source, using an up-to-date compiler"}
+AGPBI: {"kind":"SIMPLE","text":"and without specifying any \"-target\" type options. The consequence of ignoring","position":{},"original":"and without specifying any \"-target\" type options. The consequence of ignoring"}
+AGPBI: {"kind":"SIMPLE","text":"this warning is that reflective operations on this class will incorrectly","position":{},"original":"this warning is that reflective operations on this class will incorrectly"}
+AGPBI: {"kind":"SIMPLE","text":"indicate that it is *not* an inner class.","position":{},"original":"indicate that it is *not* an inner class."}
+AGPBI: {"kind":"SIMPLE","text":"warning: Ignoring InnerClasses attribute for an anonymous inner class","position":{},"original":"warning: Ignoring InnerClasses attribute for an anonymous inner class"}
+AGPBI: {"kind":"SIMPLE","text":"(org.shaded.apache.commons.logging.LogFactory$3) that doesn\u0027t come with an","position":{},"original":"(org.shaded.apache.commons.logging.LogFactory$3) that doesn\u0027t come with an"}
+AGPBI: {"kind":"SIMPLE","text":"associated EnclosingMethod attribute. This class was probably produced by a","position":{},"original":"associated EnclosingMethod attribute. This class was probably produced by a"}
+AGPBI: {"kind":"SIMPLE","text":"compiler that did not target the modern .class file format. The recommended","position":{},"original":"compiler that did not target the modern .class file format. The recommended"}
+AGPBI: {"kind":"SIMPLE","text":"solution is to recompile the class from source, using an up-to-date compiler","position":{},"original":"solution is to recompile the class from source, using an up-to-date compiler"}
+AGPBI: {"kind":"SIMPLE","text":"and without specifying any \"-target\" type options. The consequence of ignoring","position":{},"original":"and without specifying any \"-target\" type options. The consequence of ignoring"}
+AGPBI: {"kind":"SIMPLE","text":"this warning is that reflective operations on this class will incorrectly","position":{},"original":"this warning is that reflective operations on this class will incorrectly"}
+AGPBI: {"kind":"SIMPLE","text":"indicate that it is *not* an inner class.","position":{},"original":"indicate that it is *not* an inner class."}
+AGPBI: {"kind":"SIMPLE","text":"warning: Ignoring InnerClasses attribute for an anonymous inner class","position":{},"original":"warning: Ignoring InnerClasses attribute for an anonymous inner class"}
+AGPBI: {"kind":"SIMPLE","text":"(org.shaded.apache.commons.logging.LogFactory$4) that doesn\u0027t come with an","position":{},"original":"(org.shaded.apache.commons.logging.LogFactory$4) that doesn\u0027t come with an"}
+AGPBI: {"kind":"SIMPLE","text":"associated EnclosingMethod attribute. This class was probably produced by a","position":{},"original":"associated EnclosingMethod attribute. This class was probably produced by a"}
+AGPBI: {"kind":"SIMPLE","text":"compiler that did not target the modern .class file format. The recommended","position":{},"original":"compiler that did not target the modern .class file format. The recommended"}
+AGPBI: {"kind":"SIMPLE","text":"solution is to recompile the class from source, using an up-to-date compiler","position":{},"original":"solution is to recompile the class from source, using an up-to-date compiler"}
+AGPBI: {"kind":"SIMPLE","text":"and without specifying any \"-target\" type options. The consequence of ignoring","position":{},"original":"and without specifying any \"-target\" type options. The consequence of ignoring"}
+AGPBI: {"kind":"SIMPLE","text":"this warning is that reflective operations on this class will incorrectly","position":{},"original":"this warning is that reflective operations on this class will incorrectly"}
+AGPBI: {"kind":"SIMPLE","text":"indicate that it is *not* an inner class.","position":{},"original":"indicate that it is *not* an inner class."}
+AGPBI: {"kind":"SIMPLE","text":"warning: Ignoring InnerClasses attribute for an anonymous inner class","position":{},"original":"warning: Ignoring InnerClasses attribute for an anonymous inner class"}
+AGPBI: {"kind":"SIMPLE","text":"(org.shaded.apache.commons.logging.LogFactory$5) that doesn\u0027t come with an","position":{},"original":"(org.shaded.apache.commons.logging.LogFactory$5) that doesn\u0027t come with an"}
+AGPBI: {"kind":"SIMPLE","text":"associated EnclosingMethod attribute. This class was probably produced by a","position":{},"original":"associated EnclosingMethod attribute. This class was probably produced by a"}
+AGPBI: {"kind":"SIMPLE","text":"compiler that did not target the modern .class file format. The recommended","position":{},"original":"compiler that did not target the modern .class file format. The recommended"}
+AGPBI: {"kind":"SIMPLE","text":"solution is to recompile the class from source, using an up-to-date compiler","position":{},"original":"solution is to recompile the class from source, using an up-to-date compiler"}
+AGPBI: {"kind":"SIMPLE","text":"and without specifying any \"-target\" type options. The consequence of ignoring","position":{},"original":"and without specifying any \"-target\" type options. The consequence of ignoring"}
+AGPBI: {"kind":"SIMPLE","text":"this warning is that reflective operations on this class will incorrectly","position":{},"original":"this warning is that reflective operations on this class will incorrectly"}
+AGPBI: {"kind":"SIMPLE","text":"indicate that it is *not* an inner class.","position":{},"original":"indicate that it is *not* an inner class."}
+AGPBI: {"kind":"SIMPLE","text":"warning: Ignoring InnerClasses attribute for an anonymous inner class","position":{},"original":"warning: Ignoring InnerClasses attribute for an anonymous inner class"}
+AGPBI: {"kind":"SIMPLE","text":"(org.shaded.apache.commons.logging.LogFactory$6) that doesn\u0027t come with an","position":{},"original":"(org.shaded.apache.commons.logging.LogFactory$6) that doesn\u0027t come with an"}
+AGPBI: {"kind":"SIMPLE","text":"associated EnclosingMethod attribute. This class was probably produced by a","position":{},"original":"associated EnclosingMethod attribute. This class was probably produced by a"}
+AGPBI: {"kind":"SIMPLE","text":"compiler that did not target the modern .class file format. The recommended","position":{},"original":"compiler that did not target the modern .class file format. The recommended"}
+AGPBI: {"kind":"SIMPLE","text":"solution is to recompile the class from source, using an up-to-date compiler","position":{},"original":"solution is to recompile the class from source, using an up-to-date compiler"}
+AGPBI: {"kind":"SIMPLE","text":"and without specifying any \"-target\" type options. The consequence of ignoring","position":{},"original":"and without specifying any \"-target\" type options. The consequence of ignoring"}
+AGPBI: {"kind":"SIMPLE","text":"this warning is that reflective operations on this class will incorrectly","position":{},"original":"this warning is that reflective operations on this class will incorrectly"}
+AGPBI: {"kind":"SIMPLE","text":"indicate that it is *not* an inner class.","position":{},"original":"indicate that it is *not* an inner class."}
+
+
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+
+BUILD SUCCESSFUL
+
+Total time: 10.315 secs
+Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@46c9904c] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.
+10:45:34.039 [ApplicationImpl pooled thread 17] DEBUG org.gradle.tooling.GradleConnector - Connecting from tooling API consumer version 2.2
+Tooling API is using target Gradle version: 2.2.1.
+Connected to daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=2aea1f38-b1a3-4b3a-921c-b4ac51953f5c.1, currentDir=/home/admin/Programming/androidPro/SalesDemo}.
+Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJavaNote: /home/admin/Programming/androidPro/SalesDemo/app/src/main/java/ap1/com/demo/HTTPClient.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+
+BUILD SUCCESSFUL
+
+Total time: 2.246 secs
+Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@2c292f7] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.
+10:46:23.903 [ApplicationImpl pooled thread 17] DEBUG org.gradle.tooling.GradleConnector - Connecting from tooling API consumer version 2.2
+Tooling API is using target Gradle version: 2.2.1.
+Connected to daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=d069d7b0-1d4d-419c-b05b-9c6dd6f00a30.1, currentDir=/home/admin/Programming/androidPro/SalesDemo}.
+Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJavaNote: /home/admin/Programming/androidPro/SalesDemo/app/src/main/java/ap1/com/demo/HTTPClient.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+
+BUILD SUCCESSFUL
+
+Total time: 2.21 secs
+Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@647b9200] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.
+10:56:14.986 [ApplicationImpl pooled thread 12] DEBUG org.gradle.tooling.GradleConnector - Connecting from tooling API consumer version 2.2
+Tooling API is using target Gradle version: 2.2.1.
+Connected to daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=1c81addd-1d76-4514-acc6-0576d7a63203.1, currentDir=/home/admin/Programming/androidPro/SalesDemo}.
+Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug UP-TO-DATE
+:app:zipalignDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 0.739 secs
+Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@cc539f3] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.
+11:01:28.718 [ApplicationImpl pooled thread 16] DEBUG org.gradle.tooling.GradleConnector - Connecting from tooling API consumer version 2.2
+Tooling API is using target Gradle version: 2.2.1.
+Connected to daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=408500a2-746c-4842-ab50-514636b0a800.1, currentDir=/home/admin/Programming/androidPro/SalesDemo}.
+Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJavaNote: /home/admin/Programming/androidPro/SalesDemo/app/src/main/java/ap1/com/demo/HTTPClient.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+
+BUILD SUCCESSFUL
+
+Total time: 2.125 secs
+Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@5988d2a8] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.
+11:04:45.324 [ApplicationImpl pooled thread 19] DEBUG org.gradle.tooling.GradleConnector - Connecting from tooling API consumer version 2.2
+Tooling API is using target Gradle version: 2.2.1.
+Connected to daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=96291646-441d-4979-a707-3d38c6f26188.1, currentDir=/home/admin/Programming/androidPro/SalesDemo}.
+Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72200Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42200Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:compileDebugJavaNote: /home/admin/Programming/androidPro/SalesDemo/app/src/main/java/ap1/com/demo/HTTPClient.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:preDexDebug UP-TO-DATE
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+
+BUILD SUCCESSFUL
+
+Total time: 2.256 secs
+Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@690bf355] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.

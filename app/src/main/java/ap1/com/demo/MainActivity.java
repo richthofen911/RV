@@ -169,8 +169,12 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
                 if(readyToRange){
                     for(Beacon oneBeacon: beaconsFromUrl){
                         if(beacons.containsKey(oneBeacon.getUmm()) && (beacons.get(oneBeacon.getUmm()) == RECOProximity.RECOProximityImmediate || beacons.get(oneBeacon.getUmm()) == RECOProximity.RECOProximityNear)){
-                            if(!DataStore.getInoutStatus()){
-                                DataStore.setInoutStatus(true);
+                            if(!oneBeacon.getInoutStatus()){
+                                Log.e("Inout pretend in: ", String.valueOf(oneBeacon.getInoutStatus()));
+                                oneBeacon.setInoutStatus(true);
+                                beaconId = oneBeacon.getBeaconId();
+                                url_company =  url_company_prefix + oneBeacon.getCompanyId() + "/" + oneBeacon.getUuid() +"/"+ oneBeacon.getMajor() + "/" + oneBeacon.getMinor();
+                                DataStore.setMessageUrl(url_company);
                                 Log.e("load message with url: ", url_company);
                                 wv_top.setVisibility(View.VISIBLE);
                                 wv_top.loadUrl(url_company);
@@ -182,30 +186,25 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
                                 if(!isAppActive){
                                     simpleNotification();
                                 }
-
                                 Log.e("put a check in ---", "");
-
                             }else{
                                 Log.e("checked in already", "");
                             }
+                        }else if(oneBeacon.getInoutStatus()){
+                            Log.e("Inout pretend out: ", String.valueOf(oneBeacon.getInoutStatus()));
+                            oneBeacon.setInoutStatus(false);
+                            inout.put(macAddress, "out");
+                            rootRef.child(beaconId).child(macAddress).setValue("out");
+                            Log.e("put a check out --- ", "");
                         }else{
-                            if(DataStore.getInoutStatus()){
-                                DataStore.setInoutStatus(false);
-                                inout.put(macAddress, "out");
-                                rootRef.child(beaconId).child(macAddress).setValue("out");
-                                Log.e("put a check out --- ", "");
-                            }else{
-                                Log.e("checked out already", "");
-                            }
+                            Log.e("checked out already", "");
                         }
                     }
                 }
             }
-        }else{
-            rootRef.child(beaconId).child(macAddress).setValue("out");
-            Log.e("no beacons found by BT", "send an out");
         }
     }
+
 
 /*
     @Override
@@ -344,9 +343,9 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
                 Log.e("beacon in httpclient ", httpClient.getBeacons().toString());
                 beaconsFromUrl.addAll(httpClient.getBeacons());
                 //aBeacon = httpClient.getBeacons().get(0);
-                beaconId = aBeacon.getBeaconId();
-                url_company = url_company_prefix + aBeacon.getCompanyId() + "/" + aBeacon.getUuid() +"/"+ aBeacon.getMajor() + "/" + aBeacon.getMinor();
-                DataStore.setMessageUrl(url_company);
+                //beaconId = aBeacon.getBeaconId();
+                //url_company = url_company_prefix + aBeacon.getCompanyId() + "/" + aBeacon.getUuid() +"/"+ aBeacon.getMajor() + "/" + aBeacon.getMinor();
+                //DataStore.setMessageUrl(url_company);
                 readyToRange = true;
             }
         }
