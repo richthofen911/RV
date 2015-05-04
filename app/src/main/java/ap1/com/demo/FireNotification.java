@@ -21,7 +21,7 @@ public class FireNotification extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fire_notification);
-
+/*
         image_bottom2 = (ImageView) findViewById(R.id.image_bottom2);
         wv_top2 = (WebView) findViewById(R.id.wv_top2);
         btn_close2 = (Button) findViewById(R.id.btn_close2);
@@ -35,7 +35,7 @@ public class FireNotification extends ActionBarActivity {
         });
         wv_top2.loadUrl(DataStore.getMessageUrl());
         btn_close2.setVisibility(View.VISIBLE);
-
+*/
     }
 
     public void onCloseClick2(View view){

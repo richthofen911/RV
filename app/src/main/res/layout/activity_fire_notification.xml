@@ -10,30 +10,15 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"/>
 
-    <FrameLayout
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_messages2"
+        android:layout_above="@id/image_bottom2"
+        android:layout_marginBottom="-300dp"
+        android:layout_alignBaseline="@id/image_bottom2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:layout_width="match_parent"
         android:layout_height="450dp"
-        android:layout_above="@id/image_bottom2"
-        android:layout_alignBaseline="@id/image_bottom2"
-        android:layout_marginBottom="-300dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp">
-
-        <WebView
-            android:id="@+id/wv_top2"
-            android:layout_width="fill_parent"
-            android:layout_height="430dp"/>
-
-        <Button
-            android:id="@+id/btn_close2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_above="@id/wv_top2"
-            android:layout_marginBottom="-15dp"
-            android:layout_marginLeft="230dp"
-            android:text="X"
-            android:onClick="onCloseClick2"
-            android:visibility="invisible"/>
-    </FrameLayout>
+        android:scrollbars="vertical"/>
 
 </RelativeLayout>

@@ -11,12 +11,15 @@ import android.os.Bundle;
 import android.os.RemoteException;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.firebase.client.Firebase;
 import com.perples.recosdk.RECOBeacon;
@@ -71,10 +74,20 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
     NotificationCompat.Builder notifyBuilder;
     NotificationManager notificationManager;
 
+    private RecyclerView recyclerView_messages;
+    public static AdapterMessages adapterMessages;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        recyclerView_messages = (RecyclerView) findViewById(R.id.recyclerview_messages);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        recyclerView_messages.setLayoutManager(linearLayoutManager);
+        recyclerView_messages.setHasFixedSize(true);
+        adapterMessages = new AdapterMessages(DataStore.messageUrls);
+        recyclerView_messages.setAdapter(adapterMessages);
+
         mRecoManager = RECOBeaconManager.getInstance(getApplicationContext(), false, false);
         mRegions = this.generateBeaconRegion();
         notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
@@ -88,17 +101,18 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
         inout.put(macAddress, "out");
 
         image_bottom = (ImageView) findViewById(R.id.image_bottom);
-        wv_top = (WebView) findViewById(R.id.wv_top);
-        btn_close = (Button) findViewById(R.id.btn_close);
+        //wv_top = (WebView) findViewById(R.id.wv_top);
+        //btn_close = (Button) findViewById(R.id.btn_close);
 
         image_bottom.setImageResource(R.drawable.ap1_logo);
+        /*
         wv_top.setWebViewClient(new WebViewClient(){
             public boolean shouldOverrideUrlLoading(WebView view, String url){
                 view.loadUrl(url);
                 return true;
             }
         });
-
+        */
 
         getBeaconList = new GetBeaconList();
         getBeaconList.execute(url_beaconList);
@@ -116,7 +130,7 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
     }
 
     public PendingIntent getDefaultIntent(){
-        PendingIntent pendingIntent= PendingIntent.getActivity(this, 1, new Intent(getApplicationContext(), FireNotification.class), PendingIntent.FLAG_CANCEL_CURRENT);
+        PendingIntent pendingIntent= PendingIntent.getActivity(this, 1, new Intent(getApplicationContext(), MainActivity.class), PendingIntent.FLAG_CANCEL_CURRENT);
         return pendingIntent;
     }
 
@@ -174,11 +188,14 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
                                 oneBeacon.setInoutStatus(true);
                                 beaconId = oneBeacon.getBeaconId();
                                 url_company =  url_company_prefix + oneBeacon.getCompanyId() + "/" + oneBeacon.getUuid() +"/"+ oneBeacon.getMajor() + "/" + oneBeacon.getMinor();
-                                DataStore.setMessageUrl(url_company);
-                                Log.e("load message with url: ", url_company);
-                                wv_top.setVisibility(View.VISIBLE);
-                                wv_top.loadUrl(url_company);
-                                btn_close.setVisibility(View.VISIBLE);
+                                if(!DataStore.messageUrls.contains(url_company)){
+                                    DataStore.messageUrls.add(url_company);
+                                    Log.e("one url added", "");
+                                    adapterMessages.notifyDataSetChanged();
+                                }
+                                //wv_top.setVisibility(View.VISIBLE);
+                                //wv_top.loadUrl(url_company);
+                                //btn_close.setVisibility(View.VISIBLE);
                                 inout.put(macAddress, "in");
                                 if(beaconId != null){
                                     rootRef.child(beaconId).child(macAddress).setValue("in");
@@ -204,61 +221,6 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
             }
         }
     }
-
-
-/*
-    @Override
-    public void didRangeBeaconsInRegion(Collection<RECOBeacon> recoBeacons, RECOBeaconRegion recoRegion) {
-        if(!recoBeacons.isEmpty()){
-            synchronized (recoBeacons){
-                for(RECOBeacon recoBeacon: recoBeacons){
-                    beacons.put("" + recoBeacon.getProximityUuid() + recoBeacon.getMajor() + recoBeacon.getMinor(), recoBeacon.getProximity());
-                }
-                if(readyToRange){
-                    for(Beacon oneBeacon: beaconsFromUrl){
-
-                    }
-                    if(beacons.containsKey(aBeacon.getUmm()) && (beacons.get(aBeacon.getUmm()) == RECOProximity.RECOProximityImmediate || beacons.get(aBeacon.getUmm()) == RECOProximity.RECOProximityNear)){
-                        if(!DataStore.getInoutStatus()){
-                            DataStore.setInoutStatus(true);
-                            Log.e("load message with url: ", url_company);
-                            wv_top.setVisibility(View.VISIBLE);
-                            wv_top.loadUrl(url_company);
-                            btn_close.setVisibility(View.VISIBLE);
-                            inout.put(macAddress, "in");
-                            if(beaconId != null){
-                                rootRef.child(beaconId).child(macAddress).setValue("in");
-                            }
-
-                            if(!isAppActive){
-                                simpleNotification();
-                            }
-
-                            Log.e("put a check in ---", "");
-
-                        }else{
-                            Log.e("checked in already", "");
-                        }
-
-                    }else{
-                        if(DataStore.getInoutStatus()){
-                            DataStore.setInoutStatus(false);
-                            inout.put(macAddress, "out");
-                            rootRef.child(beaconId).child(macAddress).setValue("out");
-                            Log.e("put a check out --- ", "");
-                        }else{
-                            Log.e("checked out already", "");
-                        }
-                    }
-                }
-                else{
-                    rootRef.child(beaconId).child(macAddress).setValue("out");
-                    Log.e("no beacon found", "send an out");
-                }
-            }
-        }
-    }
-*/
 
     protected void start(ArrayList<RECOBeaconRegion> regions) {
         for(RECOBeaconRegion region : regions) {
@@ -323,12 +285,12 @@ public class MainActivity extends ActionBarActivity implements RECOServiceConnec
 
         return regions;
     }
-
+/*
     public void onCloseClick(View view){
         wv_top.setVisibility(View.INVISIBLE);
         btn_close.setVisibility(View.INVISIBLE);
     }
-
+*/
     public class GetBeaconList extends AsyncTask<String, String, String> {
         HTTPClient httpClient = new HTTPClient();
         @Override
