@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "ap1.com.demo"
-        minSdkVersion 18
+        minSdkVersion 19
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -25,6 +25,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile 'com.android.support:cardview-v7:21.0.3'
     compile 'com.android.support:recyclerview-v7:21.0.3'
+    compile project(':facebook')
     compile files('libs/firebase-client-android-2.2.3.jar')
     compile files('libs/reco-sdk-android_0.1.3.jar')
     compile files('libs/reco-sdk-android_0.2.1.jar')

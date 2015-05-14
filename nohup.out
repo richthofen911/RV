@@ -1497,3 +1497,5 @@ BUILD SUCCESSFUL
 
 Total time: 2.298 secs
 Received result DaemonCommandResult[type=Success, value=org.gradle.tooling.internal.provider.BuildActionResult@47dd86fe] from daemon DaemonInfo{pid=12304, address=[6767371e-07cc-4994-85f3-f3d20f79b01a port:53116, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], idle=true, context=DefaultDaemonContext[uid=15165d84-b631-496e-8e53-06a2caab24cd,javaHome=/usr/java/jdk1.8.0_40,daemonRegistryDir=/home/admin/.gradle/daemon,pid=12304,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=CA,-Duser.language=en,-Duser.variant]}.
+Gradle daemon stopped.
+[25752764]   WARN - api.vfs.impl.local.FileWatcher - Watcher terminated with exit code 0 

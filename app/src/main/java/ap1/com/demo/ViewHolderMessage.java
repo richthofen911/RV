@@ -29,7 +29,7 @@ public class ViewHolderMessage extends RecyclerView.ViewHolder{
             @Override
             public void onClick(View view) {
                 DataStore.messageUrls.remove(selfPosition);
-                MainActivity.adapterMessages.notifyDataSetChanged();
+                ActivityMain.adapterMessages.notifyDataSetChanged();
             }
         });
     }
