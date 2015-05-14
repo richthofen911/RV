@@ -90,7 +90,7 @@ public class HTTPClient {
         return beacons;
     }
 
-    public static String postRequest_auth(String MacAddr) {
+    public static String postRequest_formReg(String MacAddr) {
         //      CloseableHttpClient httpclient = HttpClients.createDefault();
         HttpClient httpclient = new DefaultHttpClient();
         HttpPost httppost = new HttpPost(url_auth);

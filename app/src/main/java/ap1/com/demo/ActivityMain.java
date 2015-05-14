@@ -36,8 +36,9 @@ import java.util.Map;
 public class ActivityMain extends ActionBarActivity implements RECOServiceConnectListener, RECORangingListener{
 
     String url_beaconList = "http://sto.apengage.io/index.php/beacons/global";
-    String url_company_prefix = "http://sto.apengage.io/index.php/api/v2/beacons/";
-    String url_company = "";
+    String url_company_prefix = "http://sto.apengage.io/index.php/api/v2/campaigns/";
+
+    //String url_company = "";
     String beaconId;
     String TOBEFOUND_UUID = "E2C56DB5-DFFB-48D2-B060-D0F5A71096E0";
 
@@ -179,20 +180,19 @@ public class ActivityMain extends ActionBarActivity implements RECOServiceConnec
                 }
                 if(readyToRange){
                     for(Beacon oneBeacon: beaconsFromUrl){
+                        String url_company_suffix = oneBeacon.getCompanyId() + "/" + oneBeacon.getUuid() + "/" + oneBeacon.getMajor() + "/" + oneBeacon.getMinor();
+                        String url_company = url_company_prefix + "in/" + url_company_suffix;
                         if(beacons.containsKey(oneBeacon.getUmm()) && (beacons.get(oneBeacon.getUmm()) == RECOProximity.RECOProximityImmediate || beacons.get(oneBeacon.getUmm()) == RECOProximity.RECOProximityNear)){
                             if(!oneBeacon.getInoutStatus()){
                                 Log.e("Inout pretend in: ", String.valueOf(oneBeacon.getInoutStatus()));
                                 oneBeacon.setInoutStatus(true);
                                 beaconId = oneBeacon.getBeaconId();
-                                url_company =  url_company_prefix + oneBeacon.getCompanyId() + "/" + oneBeacon.getUuid() +"/"+ oneBeacon.getMajor() + "/" + oneBeacon.getMinor();
                                 if(!DataStore.messageUrls.contains(url_company)){
                                     DataStore.messageUrls.add(url_company);
                                     Log.e("one url added", "");
                                     adapterMessages.notifyDataSetChanged();
                                 }
-                                //wv_top.setVisibility(View.VISIBLE);
-                                //wv_top.loadUrl(url_company);
-                                //btn_close.setVisibility(View.VISIBLE);
+
                                 inout.put(macAddress, "in");
                                 if(beaconId != null){
                                     rootRef.child(beaconId).child(macAddress).setValue("in");
@@ -204,8 +204,16 @@ public class ActivityMain extends ActionBarActivity implements RECOServiceConnec
                             }else{
                                 Log.e("checked in already", "");
                             }
-                        }else if(oneBeacon.getInoutStatus()){
+                        } else if (oneBeacon.getInoutStatus()){
                             Log.e("Inout pretend out: ", String.valueOf(oneBeacon.getInoutStatus()));
+                            for(int i = 0; i < DataStore.messageUrls.size(); i++){
+                                if (DataStore.messageUrls.get(i).equals(url_company)){
+                                    url_company = url_company_prefix + "out/" + url_company_suffix;
+                                    DataStore.messageUrls.set(i, url_company);
+                                    adapterMessages.notifyDataSetChanged();
+                                    break;
+                                }
+                            }
                             oneBeacon.setInoutStatus(false);
                             inout.put(macAddress, "out");
                             rootRef.child(beaconId).child(macAddress).setValue("out");

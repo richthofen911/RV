@@ -53,6 +53,8 @@ public class ActivityLogin extends Activity implements View.OnClickListener{
     private boolean isFBTaskFinished = false;
     private boolean isKeyOK = false;
 
+    private Intent goToRegister;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -100,7 +102,8 @@ public class ActivityLogin extends Activity implements View.OnClickListener{
         }
 
         if ( v.getId() == R.id.btn_register ) {
-            //register();
+            goToRegister = new Intent(ActivityLogin.this, ActivityRegister.class);
+            startActivity(goToRegister);
         }
     }
 

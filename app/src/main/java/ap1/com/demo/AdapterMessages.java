@@ -15,8 +15,8 @@ public class AdapterMessages extends RecyclerView.Adapter<ViewHolderMessage>{
 
     public ArrayList<String> messageURLs = new ArrayList<>();
 
-    public AdapterMessages(ArrayList<String> webViews){
-        messageURLs = webViews;
+    public AdapterMessages(ArrayList<String> urls){
+        messageURLs = urls;
     }
 
     @Override
