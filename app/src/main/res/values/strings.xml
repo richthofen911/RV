@@ -4,4 +4,12 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_fire_notification">Demo</string>
+    <string name="title_activity_activity_login">ActivityLogin</string>
+    <string name="fb_appId">503009606519560</string>
+
+    <color name="light_gray">#FFECF4FF</color>
+    <color name="button_green">#FF0AA6B4</color>
+    <color name="facebook_blue">#2E2EE6</color>
+    <string name="title_activity_activity_register">Demo</string>
+
 </resources>
